@@ -7,6 +7,7 @@
 - UI constructed using `customtkinter`
 - Real-time elapsed time and duration display
 - Responsive and beginner-friendly interface
+- Black Lines (2015) Album can be excluded/included
 
 ## 🛠️ Built With
 - Python — Core programming language
