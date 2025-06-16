@@ -2,18 +2,19 @@
 ![Mayday Parade Music Player](screenshots/mp_music_player_py.png)
 
 ## ✨ Features
-- Play/pause audio playback
-- .flac files supported
-- UI constructed using `customtkinter`
-- Real-time elapsed time and duration display
-- Responsive and beginner-friendly interface
-- Black Lines (2015) Album can be excluded/included
+- 🎵 Play/pause and skip songs
+- 🔁 "Play Something" button for random song selection
+- 🧭 Displays real-time elapsed time and total song duration
+- 🎨 Modern, themeable UI using `customtkinter`
+- 📂 Plays .flac files from a local folder
+- 💬 **Discord Rich Presence integration** – shows your current activity (e.g., "Listening to Jamie All Over") as your Discord status while the app is running
 
 ## 🛠️ Built With
 - **Python** — Core programming language
 - **tkinter** — Standard GUI library
 - **customtkinter** — For a modern UI look
 - **pygame** — For audio playback
+- **pypresence** – to connect with Discord Rich Presence
 
 ## 📝 Notes
 - Only **7 Albums** (ALIR to WIMTFA) and **3 EPs** (Tales, Valdosta, and Out of Here) are included
