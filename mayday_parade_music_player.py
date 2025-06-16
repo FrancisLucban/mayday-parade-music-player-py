@@ -28,7 +28,7 @@ presence.connect()
 
 # Initialization of flags
 is_first_song = True  # Flag to check if it's the first song loaded
-if_playing = False # Flag to check if current song is playing
+is_playing = False # Flag to check if current song is playing
 is_paused = False # Flag to check if current song is paused
 is_muted = False # Flag to check if muted
 is_marquee_activated = False # Flag to check if marquee is on
@@ -103,8 +103,8 @@ def song_title_configuration(song_name):
     #update_presence(current_song_name)
 
 def scroll_text():
-    global current_song_name, is_marquee_activated, if_playing
-    if is_marquee_activated and if_playing:
+    global current_song_name, is_marquee_activated, is_playing
+    if is_marquee_activated and is_playing:
         current_song_name = current_song_name[1:] + current_song_name[0]
         song_title.configure(text=current_song_name)
         song_title.after(200, scroll_text)
@@ -141,7 +141,7 @@ def black_lines_activation():
 # ---------------------------- PLAY RANDOM SONG ----------------------------
 
 def play_random_song(num):
-    global if_playing, is_paused, song_number, is_first_song, song_length, filename, current_time, playing_time_active
+    global is_playing, is_paused, song_number, is_first_song, song_length, filename, current_time, playing_time_active
 
     # Stops previous song to prevent overlapping of songs
     stop_song()
@@ -152,7 +152,7 @@ def play_random_song(num):
         playing_time_active = None
 
     song_number = num
-    if_playing = True
+    is_playing = True
     is_paused = False
 
     filename = os.path.join(base_path, "mp/", str(num) + ".flac")
@@ -193,7 +193,7 @@ def play_random_song(num):
 # ---------------------------- CHECK END MUSIC FUNCTION ----------------------------
 
 def check_music_end():
-    if if_playing and not is_paused and not pygame.mixer.music.get_busy():  # Check if music is not busy (stopped)
+    if is_playing and not is_paused and not pygame.mixer.music.get_busy():  # Check if music is not busy (stopped)
         song_chooser()
 
     # Check every 100ms
@@ -202,9 +202,9 @@ def check_music_end():
 
 # ---------------------------- STOP SONG ----------------------------
 def stop_song():
-    global if_playing, is_paused, song_number, song_length, current_time, filename, current_song_name, current_assets
+    global is_playing, is_paused, song_number, song_length, current_time, filename, current_song_name, current_assets
 
-    if_playing = False
+    is_playing = False
     is_paused = False
     song_number = 0
     song_length = 0
@@ -235,9 +235,9 @@ def stop_song():
 # ---------------------------- PLAY/UNPAUSE SONG ----------------------------
 
 def toggle_play_pause():
-    global if_playing, is_paused, toggled_pause
+    global is_playing, is_paused, toggled_pause
 
-    if if_playing:
+    if is_playing:
         if is_paused:
             # Unpause the song
             is_paused = False
@@ -254,7 +254,7 @@ def toggle_play_pause():
 
 # ---------------------------- PREVIOUS SONG ----------------------------
 def previous_song(song_num):
-    if not if_playing:
+    if not is_playing:
         return
 
     if pygame.mixer.music.get_pos() / 1000 > 2:
@@ -267,7 +267,7 @@ def previous_song(song_num):
 
 # ---------------------------- NEXT SONG ----------------------------
 def next_song(song_num):
-    if not if_playing:
+    if not is_playing:
         return
 
     last_song = 100 if is_black_lines_activated else 88
