@@ -23,7 +23,7 @@
 
 ## 📂 Why I Built This
 This project started as a personal exploration of Python's GUI and multimedia capabilities.
-I wanted a simple and functional app to play Mayday Parade songs (since I'm a huge fan of the band) while practicing Python in a creative way.
+I wanted a simple and functional app to play Mayday Parade songs (since I'm a huge fan of the band), much like an offline Spotify or Apple Music while practicing Python in a creative way.
 It's also part of a broader goal to explore more projects outside my main academic and professional focus.
 
 ## ⚠️ Disclaimer
