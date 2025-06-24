@@ -27,8 +27,9 @@ I wanted a simple and functional app to play Mayday Parade songs (since I'm a hu
 It's also part of a broader goal to explore more projects outside my main academic and professional focus.
 
 ## ⚠️ Disclaimer
-This project is intended **for personal use and educational purposes only.**
-It is **not meant to be deployed, redistributed, or shared publicly** in any form that includes copyrighted media files (such as songs).
+This repository is for personal and display purposes only. Cloning or attempting to run the project as-is will likely be unsuccessful, as it relies on external assets and resources that are not included in this repository. The code is intended to demonstrate structure and functionality, but it is not a complete, standalone application.
+Also, this project is intended **for personal use and educational purposes only.**
+It is **not meant to be deployed, redistributed, or shared publicly** in any form that includes copyrighted media files (such as songs). 
 
 The audio files used during development and testing are assumed to be locally owned or licensed for personal use.
 Please ensure you do not include or distribute any copyrighted material when sharing or forking this repository.
