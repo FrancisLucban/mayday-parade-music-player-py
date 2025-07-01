@@ -14,7 +14,8 @@
 - **tkinter** — Standard GUI library
 - **customtkinter** — For a modern UI look
 - **pygame** — For audio playback
-- **pypresence** – to connect with Discord Rich Presence
+- **pypresence** — To connect with Discord Rich Presence
+- **pyinstaller** — App packaging into a standalone executable
 
 ## 📝 Notes
 - Only **7 Albums** (ALIR to WIMTFA) and **3 EPs** (Tales, Valdosta, and Out of Here) are included
