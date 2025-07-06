@@ -27,6 +27,8 @@ This project started as a personal exploration of Python's GUI and multimedia ca
 I wanted a simple and functional app to play Mayday Parade songs (since I'm a huge fan of the band), much like an offline Spotify or Apple Music while practicing Python in a creative way.
 It's also part of a broader goal to explore more projects outside my main academic and professional focus.
 
+This idea initially came to fruition when my friends—who are also avid fans of the band—expressed interest in an offline application that could randomly play the band's songs without relying on streaming platforms such as Spotify or YouTube.
+
 ## ⚠️ Disclaimer
 This repository is for personal and display purposes only. Cloning or attempting to run the project as-is will likely be unsuccessful, as it relies on external assets and resources that are not included in this repository. The code is intended to demonstrate structure and functionality, but it is not a complete, standalone application.
 It is also **not meant to be deployed, redistributed, or shared publicly** in any form that includes copyrighted media files (such as songs). 
