@@ -2,8 +2,8 @@
 ![Mayday Parade Music Player](screenshots/mp_music_player_py.png)
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/python.png" width="40px">
-  <img src="https://customtkinter.tomschimansky.com/img/icon.ico" width="40">
+  <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/python.png" width="60px">
+  <img src="https://customtkinter.tomschimansky.com/img/icon.ico" width="60px">
 </p>
 
 
